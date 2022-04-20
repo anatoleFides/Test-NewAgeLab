@@ -45,7 +45,46 @@
     </nav>
     <main>
       <div class="container">
-        <div class="cards">
+        <section class="forms">
+          <h1 class="forms__title">Form</h1>
+          <div class="forms__body">
+            <form action="#" class="forms-column form">
+              <div class="form__item">
+                <label for="input_1">Label #1</label>
+                <input type="text" class="form__input" id="input_1">
+              </div>
+              <div class="form__row">
+                <div class="form__item form__item_indent">
+                  <label for="input_2">Label #2</label>
+                  <input type="text" class="form__input" id="input_2">
+                </div>
+                <div class="form__item">
+                  <label for="input_3">Label #3</label>
+                  <input type="password" class="form__input" id="input_3">
+                </div>
+              </div>
+              <div class="form__row">
+                <div class="form__item form__item_indent">
+                  <label for="input_4">Label #2</label>
+                  <input type="email" class="form__input" id="input_4">
+                </div>
+                <div class="form__item">
+                  <label for="input_5">Label #3</label>
+                  <input type="tel" class="form__input" id="input_5">
+                </div>
+              </div>
+              <button type="submit" class="form__btn btn">Submit</button>
+            </form>
+            <div class="forms-column more-inputs">
+              <div class="more-inputs__body">
+                <p class="more-inputs__parag">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et</p>
+                <p class="more-inputs__parag"><span>Ut enim ad minim veniam, quis nostrud exercitation</span></p>
+                <button class="more-inputs__btn btn">More</button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="cards">
           <div class="cards__body">
             <div class="cards__bound">
               <div class="cards__item card">
@@ -56,31 +95,27 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="cards__body">
             <div class="cards__bound">
               <div class="cards__item card">
                 <div class="card__image"></div>
                 <div class="card__content">
-                  <div class="card__title">Lorem ipsum dolor sit</div>
-                  <div class="caard__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</div>
+                  <div class="card__title">Lorem ipsum</div>
+                  <div class="caard__text">Lorem ipsum dolor sit amet, consectetur elit, sed do</div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="cards__body">
             <div class="cards__bound">
               <div class="cards__item card">
                 <div class="card__image"></div>
                 <div class="card__content">
-                  <div class="card__title">Lorem ipsum dolor sit</div>
-                  <div class="caard__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</div>
+                  <div class="card__title">Lorem ipsum dolor</div>
+                  <div class="caard__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor Lorem</div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="gallery">
+        </section>
+        <section class="gallery">
           <div class="gallery__body">
             <div class="gallery__bound">
               <div class="gallery__item"></div>
@@ -119,11 +154,8 @@
               <div class="gallery__item"></div>
             </div>
           </div>
-        </div>
+        </section>
       </div>
-      
-      
-      
     </main>
     <footer class="footer">
       <div class="container">

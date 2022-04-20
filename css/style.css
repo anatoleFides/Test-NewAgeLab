@@ -19,7 +19,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
 
 
 .wrapper {
-  background: #e1e1e3;
+  background: #eeeeee;
   padding: 0 0 168px 0;
 }
 .container {
@@ -145,35 +145,105 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
   font-family: 'Roboto', sans-serif;
 }
 
-/*MAIN--------------------------------*/
+/*FORM--------------------------------*/
+.forms {
+  border-radius: 5px;
+  background: #e9e8ec;
+  color: #343434;
+  font-family: "Roboto";
+  padding: 0 0 32px 20px;
+}
+.forms__title {
+  font-size: 24px;
+  padding: 12px 0;
+}
+.forms__body {
+  display: flex;
+  justify-content: space-between;
+}
+.form {
+  flex: 0 1 auto;
+  display: flex;
+  flex-direction: column;
+}
 
+.form__item {
+  display: flex;
+  flex-direction: column;
+}
+.form__item label {
+  padding: 0 0 9px 0;
+}
+.form__input {
+  border: 2px solid #6f6f6f;
+  padding: 6.5px 0;
+  margin: 0 0 10px 0;
+}
+.form__row {
+  display: flex;
+  justify-content: space-between;
+}
+.form__item_indent {
+  margin: 0 30px 0 0;
+}
+.form__btn {
+  padding: 3px 0 0 0;
+}
+.btn {
+  width: 175px;
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Roboto";
+  text-align: center;
+  border-radius: 4px;
+  background: #006c86;
+  padding: 8px 0;
+}
+.more-inputs {
+  flex: 0 0 33.33%;
+}
+.more-inputs__body {}
+.more-inputs__parag {
+  line-height: 20px;
+  color: #333333;
+  font-family: "Arial", sans-serif;
+}
+.more-inputs__parag span {
+  font-weight: 700;
+}
+.more-inputs__btn {}
 /*CARDS--------------------------------*/
 .cards {}
 .cards__body {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   margin: 0 -10px;
   padding: 28px 0;
 }
 .cards__bound {
   flex: 0 1 33.33%;
   padding: 0 10px;
+  display: flex;
 }
 .cards__item {
   display: flex;
   flex-direction: column;
-  border-radius: 4px;
-  align-items: stretch;
 }
 .card__image {
-  color: #959595;
+  background: #959595;
   padding: 85px 0;
-} 
+  overflow: hidden;
+  border-radius: 4px 4px 0 0;
+}
 .card__content {
+  flex: 1 1 auto;
+  background: #fff;
   padding: 0 20px;
+  border-radius: 0 0 4px 4px;
 }
 .card__title {
+  text-transform: uppercase;
   font-size: 18px;
   line-height: 12px;
   color: #000000;
@@ -183,6 +253,8 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
 }
 .caard__text {
   font-size: 13px;
+  -ms-word-break: break-all;
+  word-break: break-all;
   color: #333333;
   font-family: "Arial", sans-serif;
   margin: 13px 0 17px;
