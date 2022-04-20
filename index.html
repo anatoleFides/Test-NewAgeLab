@@ -39,42 +39,72 @@
           <li class="menu__item"><a href="#" class="menu__link">длинный пункт меню</a></li>
           <li class="menu__item"><a href="#" class="menu__link">очень длинный пункт меню</a></li>
           <li class="menu__item"><a href="#" class="menu__link">еще пункт</a></li>
-          <li class="menu__item"><a href="#" class="menu__link">п.меню</a></li>
+          <li class="menu__item">
+           <a href="#" class="menu__link">п.меню</a>
+           <ul class="submenu__list">
+             <li class="submenu__item">
+               <a href="#" class="submenu__link">Зарегистрироваться</a>
+             </li>
+             <li class="submenu__item">
+               <a href="#" class="submenu__link">Что такое ортокератология</a>
+             </li>
+             <li class="submenu__item">
+               <a href="#" class="submenu__link">История компании Парагон</a>
+             </li>
+             <li class="submenu__item">
+               <a href="#" class="submenu__link">10 причин приобрести линзы Парагон для Вашей практики</a>
+             </li>
+             <li class="submenu__item">
+               <a href="#" class="submenu__link">Рекомендации по подбору линз Парагон (обучение пользованию)</a>
+             </li>
+             <li class="submenu__item">
+               <a href="#" class="submenu__link">Сдать экзамен online</a>
+             </li>
+             <li class="submenu__item">
+               <a href="#" class="submenu__link">Связаться с дестрибьютором </a>
+             </li>
+             <li class="submenu__item">
+               <a href="#" class="submenu__link">Задать вопрос консультанту компании Парагон</a>
+             </li>
+           </ul>
+          </li>
         </ul>
       </div>
     </nav>
     <main>
       <div class="container">
         <section class="forms">
-          <h1 class="forms__title">Form</h1>
           <div class="forms__body">
-            <form action="#" class="forms-column form">
-              <div class="form__item">
-                <label for="input_1">Label #1</label>
-                <input type="text" class="form__input" id="input_1">
-              </div>
-              <div class="form__row">
-                <div class="form__item form__item_indent">
-                  <label for="input_2">Label #2</label>
-                  <input type="text" class="form__input" id="input_2">
-                </div>
+            <div class="forms__column">
+              <h1 class="forms__title">Form</h1>
+              <form action="#" class="form">
                 <div class="form__item">
-                  <label for="input_3">Label #3</label>
-                  <input type="password" class="form__input" id="input_3">
+                  <label for="input_1">Label #1</label>
+                  <input type="text" class="form__input" id="input_1">
                 </div>
-              </div>
-              <div class="form__row">
-                <div class="form__item form__item_indent">
-                  <label for="input_4">Label #2</label>
-                  <input type="email" class="form__input" id="input_4">
+                <div class="form__row">
+                  <div class="form__item form__item_indent">
+                    <label for="input_2">Label #2</label>
+                    <input type="text" class="form__input" id="input_2">
+                  </div>
+                  <div class="form__item">
+                    <label for="input_3">Label #3</label>
+                    <input type="password" class="form__input" id="input_3">
+                  </div>
                 </div>
-                <div class="form__item">
-                  <label for="input_5">Label #3</label>
-                  <input type="tel" class="form__input" id="input_5">
+                <div class="form__row">
+                  <div class="form__item form__item_indent">
+                    <label for="input_4">Label #2</label>
+                    <input type="email" class="form__input" id="input_4">
+                  </div>
+                  <div class="form__item">
+                    <label for="input_5">Label #3</label>
+                    <input type="tel" class="form__input" id="input_5">
+                  </div>
                 </div>
-              </div>
-              <button type="submit" class="form__btn btn">Submit</button>
-            </form>
+                <button type="submit" class="form__btn btn">Submit</button>
+              </form>
+            </div>
             <div class="forms-column more-inputs">
               <div class="more-inputs__body">
                 <p class="more-inputs__parag">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et</p>
