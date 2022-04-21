@@ -1,0 +1,144 @@
+.forms {
+  border-radius: 5px;
+  background: #cccccc;
+  color: #343434;
+  font-family: "Roboto";
+  padding: 0 32px 32px 20px;
+}
+
+.forms__title {
+  font-size: 24px;
+  padding: 13px 0 11px;
+}
+
+.forms__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.forms__column {
+  flex: 0 1 33.33%;
+ }
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__item label {
+  padding: 0 0 9px 0;
+}
+
+.form__input {
+  max-width: 131px;
+  font-weight: 700;
+  border: 2px solid #6f6f6f;
+  padding: 7px 0 7px 20px;
+  margin: 0 0 10px 0;
+}
+
+.form__input:focus-visible {
+  outline: 2px solid #006c86;
+  border: 2px solid transparent;
+}
+
+#input_1 {
+  max-width: 283px;
+}
+
+.form__row {
+  display: flex;
+}
+
+.form__item_indent {
+  margin: 0 20px 0 0;
+}
+
+.form__btn {
+  padding: 3px 0 0 0;
+}
+
+.btn {
+  width: 175px;
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Roboto";
+  text-align: center;
+  border-radius: 4px;
+  background: #006c86;
+  padding: 8px 0;
+}
+
+.more-inputs {
+  flex: 0 0 33.33%;
+  align-self: center;
+}
+
+.more-inputs__body {
+  border-radius: 4px;
+  box-shadow: 1px 2px 2px rgba(1, 1, 1, 0.25);
+  background: linear-gradient(0deg, #f2f2f2 0%, #ffffff 100%);
+  padding: 25px 20px 15px;
+}
+
+.more-inputs__parag {
+  line-height: 20px;
+  color: #333333;
+  font-family: "Arial", sans-serif;
+  margin: 0 0 16px 0;
+}
+
+.more-inputs__parag span {
+  font-weight: 700;
+}
+
+.more-inputs__btn {
+display: block;
+margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .forms__body {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .forms__column {
+    flex: 1 1 auto;
+  }
+
+  .form {
+    padding: 0 0 20px 0;
+  }
+
+  .form__item {
+    width: 100%;
+  }
+
+  .form__row {
+    justify-content: space-between;
+  }
+
+  .form__input {
+    max-width: 100%;
+  }
+
+  #input_1 {
+    max-width: 100%;
+  }
+
+  .more-inputs {
+    align-self: stretch;
+  }
+
+  .more-inputs__btn {
+    margin: 0;
+  }
+}

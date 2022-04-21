@@ -9,32 +9,46 @@
 <body>
    <div class="wrapper">
     <header class="header">
-      <div class="header__languages">
+      <div class="header__languages languages">
         <div class="container">
-          <a href="#" class="header__language">Eng</a>
-          <a href="#" class="header__language">Aze</a>
-          <a href="#" class="header__language">Рус</a>
+          <div class="languages__body">
+            <!-- <div class="languages__onlay"></div> -->
+            <div class="languages__row">
+              <a href="#" class="language__link">Eng</a>
+              <a href="#" class="language__link">Aze</a>
+              <a href="#" class="language__link">Рус</a>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="header__row">
+      <div class="header__body">
         <div class="container">
-          <div class="header__logo">
-            <img src="img/Logo.png" alt="Logo">
-          </div>
-          <div class="header__links">
-            <div class="header__item-link"><a href="#" class="header__link">lorem ipsum dolor sit</a></div>
-            <div class="header__item-link"><a href="#" class="header__link">lorem ipsum dolor</a></div>
-            <div class="header__item-link"><a href="#" class="header__link">lorem ipsum dolor</a></div>
-            <div class="header__item-link"><a href="#" class="header__link">lorem ipsum</a></div>
-            <div class="header__item-link"><a href="#" class="header__link">Lorem ipsum dolor sit amet, consectetur adipiscing</a></div>
-            <div class="header__item-link"><a href="#" class="header__link">lorem ipsum dolor sit</a></div>
+          <div class="header__row">
+            <div class="header__logo">
+              <div class="logo">Logo</div>
+            </div>
+            <div class="header__links">
+              <div class="header__item-link"><a href="#" class="header__link">lorem ipsum dolor sit</a></div>
+              <div class="header__item-link"><a href="#" class="header__link">lorem ipsum dolor</a></div>
+              <div class="header__item-link"><a href="#" class="header__link">lorem ipsum dolor</a></div>
+              <div class="header__item-link"><a href="#" class="header__link">lorem ipsum</a></div>
+              <div class="header__item-link"><a href="#" class="header__link">Lorem ipsum dolor sit amet, consectetur adipiscing</a></div>
+              <div class="header__item-link"><a href="#" class="header__link">lorem ipsum dolor sit</a></div>
+            </div>
           </div>
         </div>
       </div>
     </header>
-    <nav class="main-menu">
+    <nav class="menu" id="menu-stiky">
       <div class="container">
-        <ul class="menu__list">
+        <div class="menu__body" >
+        <button type="button" id="burger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <span class="menu__label">Меню</span>
+        <ul class="menu__list" id="main-menu">
           <li class="menu__item"><a href="#" class="menu__link">пункт меню</a></li>
           <li class="menu__item"><a href="#" class="menu__link">длинный пункт меню</a></li>
           <li class="menu__item"><a href="#" class="menu__link">очень длинный пункт меню</a></li>
@@ -69,6 +83,7 @@
            </ul>
           </li>
         </ul>
+        </div>
       </div>
     </nav>
     <main>
@@ -184,6 +199,7 @@
               <div class="gallery__item"></div>
             </div>
           </div>
+          <p class="more-item">More</p>
         </section>
       </div>
     </main>
