@@ -1,7 +1,18 @@
+ @media (max-width: 768px){
+  body.hidden{
+    overflow: hidden;
+  }
+} 
 .wrapper {
   background:#eeeeee;
   padding: 0 0 168px 0;
   position: relative;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 0 0 70px 0;
+  }
 }
 
 .wrapper:before,
@@ -34,10 +45,4 @@ main {
   margin: 20px 0 0 0;
   position: relative;
   z-index: 5;
-}
-
-@media (max-width: 768px) {
-  .wrapper {
-    padding: 0 0 70px 0;
-  }
 }
