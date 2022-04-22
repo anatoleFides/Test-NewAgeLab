@@ -1,8 +1,7 @@
 .wrapper {
-  background: #eeeeee;
+  background:#eeeeee;
   padding: 0 0 168px 0;
   position: relative;
-  width: 100%;
 }
 
 .wrapper:before,
@@ -16,26 +15,23 @@
 .wrapper:before {
   top: 0;
   height: 360px;
-  background: url(../img/header-shadow.png);
-  background-position: center;
-  background-repeat: repeat-x;
+  background: center / cover url(../img/header-shadow.png);
 }
 
 .wrapper:after {
   bottom: 0;
   height: 462px;
-  background: center / cover repeat-x url(../img/footer-shadow.png);
-  /*background-size: 100%;*/
+  background: center / cover url(../img/footer-shadow.png);
 }
 
 .container {
-  width: 980px;
+  max-width: 980px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
 main {
-  margin: 24px 0 0 0;
+  margin: 20px 0 0 0;
   position: relative;
   z-index: 5;
 }
