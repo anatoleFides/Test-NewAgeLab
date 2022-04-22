@@ -1,42 +1,61 @@
-/*HEADER-----------------------------*/
+
 .header {
   font-family: 'Roboto', sans-serif;
   position: relative;
   z-index: 5;
 }
+/*.header:before {
+  content: '';
+  position: absolute;
+  width:100%;
+  height: 45px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  background: url(../img/onlay.png);
+}
+*/
+/*LANGUAGES-------------------*/
 .header__languages {
-  background: #ccc;
-  padding: 10px 0;
-  /*position: relative;*/
+  /*background: #ccc;*/
+  
+}
+.header__languages .container {
+  position: relative;
+}
+.header__languages .container:before {
+  content: '';
+  position: absolute;
+  width:100%;
+  height: 45px;
+  left: -150px;
+  top: -1px;
+  background: url(../img/onlay.png);
 }
 .languages__body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+
 }
-/*.languages__onlay {
-  flex: 0 0 30%;
-  position: relative;
-}*/
-/*.header__languages:before {
-  content: '';
-  position: absolute;
-  width:100%;
-  height: 45px;
-  left: 0;
-  bottom: 0;
-  background: url(../img/onlay.png);
-}*/
+
 @media (max-width: 768px) {
-  .header__languages:before {
+  .header__languages {
+    background: #ffffff;
+  }
+
+  .header__languages .container:before {
     display: none;
   }
 }
+
 .languages__row {
   display: flex;
   justify-content: flex-end;
   position: relative;
   z-index: 5;
+  background: #fff;
+  padding: 10px 0;
 }
 .language__link {
   background: #f7f7f7;
@@ -52,6 +71,10 @@
   color: #fff;
   transition: all .8s ease;
 }
+
+/*LOGO+LINKS---------------------------*/
+
+
 .header__row {
   display: flex;
   justify-content: space-between;
@@ -95,39 +118,35 @@
   }
 }
 .header__links {
-  flex: 1 1 auto;
+  flex: 0 1 70%;
   display: flex;
+  justify-content: flex-end;
   flex-wrap: wrap;
-  padding: 16px 0 0 0;
-  position: relative;
+  padding: 16px 0 0 30px;
 }
+
 @media (max-width: 768px) {
   .header__links {
     flex-direction: column;
+     padding: 16px 0 0 50px;
   }
 }
-/*.header__links:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 20px;
-  background: url(../img/shadow-header-links.png);
-}*/
 .header__item-link {
   flex: 0 1 33.33%;
-  padding: 0 0 0 25px;
   margin: 0 0 10px 0;
   position: relative;
 }
-
+@media (max-width: 992px) {
+  .header__item-link {
+    flex: 0 1 45%;
+  }
+}
 .header__item-link:before {
   content: '';
   position: absolute;
   width: 14px;
   height: 13px;
-  left: 25px;
+  left: 0;
   top: -2px;
   background: url(../img/pixel.png);
 }
