@@ -15,3 +15,14 @@ function checkMarginToTop () {
 }
 
 window.onscroll = (event) => checkMarginToTop()
+
+//More item
+const btnMoreItem = document.querySelector('.more-item')
+
+btnMoreItem.onclick = (event) => {
+  const itemsGallery = document.querySelectorAll('.gallery__bound')
+
+  for (let item of itemsGallery) {
+    item.classList.toggle('active-item')
+  }
+}

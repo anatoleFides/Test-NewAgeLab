@@ -9,6 +9,7 @@
   display: flex;
   align-items: center;
   position: relative;
+  box-shadow: 0 3px 2.5px rgba(25,23,24,0.09);
 }
 
 .menu__body:before {

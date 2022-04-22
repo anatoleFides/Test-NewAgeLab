@@ -24,7 +24,8 @@
 .wrapper:after {
   bottom: 0;
   height: 462px;
-  background: url(../img/footer-shadow.png) center / cover;
+  background: center / cover repeat-x url(../img/footer-shadow.png);
+  /*background-size: 100%;*/
 }
 
 .container {
@@ -37,4 +38,10 @@ main {
   margin: 24px 0 0 0;
   position: relative;
   z-index: 5;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 0 0 70px 0;
+  }
 }
