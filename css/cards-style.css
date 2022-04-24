@@ -45,7 +45,7 @@
   word-break: break-all;
   color: #333333;
   font-family: "Arial", sans-serif;
-  margin: 12px 0 14px;
+  margin: 12px 0 15px;
 }
 
 @media (max-width: 768px) {
@@ -55,8 +55,9 @@
     align-items: stretch;
     padding: 0;
   }
+
   .cards__bound {
     flex: 0 1 100%;
-    padding: 0 0 19px 0;
-
+    padding: 0 0 20px 0;
+  }
 }

@@ -1,4 +1,3 @@
-/*BURGER------------------------------------------------------------*/
 #burger-menu {
   display: none;
 }
@@ -7,7 +6,7 @@
   #burger-menu {
     display: block;
     background: transparent;
-    flex: 0 0 20px;
+    flex: 0 0 21px;
     height: 15px;
     position: relative;
     z-index: 15;
